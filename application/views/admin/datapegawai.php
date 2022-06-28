@@ -25,23 +25,6 @@
                             <th>Aksi</th>
                         </tr>
                     </thead>
-                    <tfoot>
-                        <tr>
-                            <th>No</th>
-                            <th>Nama Pegawai</th>
-                            <th>Kode Pegawai</th>
-                            <th>Pas Foto</th>
-                            <th>Username</th>
-                            <th>NPWP</th>
-                            <th>Jenis Kelamin</th>
-                            <th>Level</th>
-                            <th>Shift Bagian</th>
-                            <th>Verifikasi</th>
-                            <th>Aksi</th>
-                        </tr>
-                    </tfoot>
-                    <tbody>
-                    </tbody>
                 </table>
             </div>
         </div>

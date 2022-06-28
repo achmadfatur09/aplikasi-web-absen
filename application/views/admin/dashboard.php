@@ -76,16 +76,6 @@
                                     <th>Status</th>
                                 </tr>
                             </thead>
-                            <tfoot>
-                                <tr>
-                                    <th>No</th>
-                                    <th>Jam Masuk</th>
-                                    <th>Nama Pegawai</th>
-                                    <th>Status</th>
-                                </tr>
-                            </tfoot>
-                            <tbody>
-                            </tbody>
                         </table>
                     </div>
                 </div>
@@ -106,16 +96,6 @@
                                     <th>Status</th>
                                 </tr>
                             </thead>
-                            <tfoot>
-                                <tr>
-                                    <th>No</th>
-                                    <th>Waktu Datang</th>
-                                    <th>Nama Pegawai</th>
-                                    <th>Status</th>
-                                </tr>
-                            </tfoot>
-                            <tbody>
-                            </tbody>
                         </table>
                     </div>
                 </div>

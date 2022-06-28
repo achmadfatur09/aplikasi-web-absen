@@ -24,19 +24,6 @@
                             <th>Aksi</th>
                         </tr>
                     </thead>
-                    <tfoot>
-                        <tr>
-                            <th>No</th>
-                            <th>Tanggal</th>
-                            <th>Nama Pegawai</th>
-                            <th>Waktu Datang</th>
-                            <th>Waktu Pulang</th>
-                            <th>Status</th>
-                            <th>Aksi</th>
-                        </tr>
-                    </tfoot>
-                    <tbody>
-                    </tbody>
                 </table>
             </div>
         </div>

@@ -14,15 +14,33 @@
                             <div class="sb-nav-link-icon"><span class="fas fa-chart-area"></span></div>
                             Data Kehadiran
                         </a>
+                        <a class="nav-link" href="<?= base_url('absensiku'); ?>">
+                            <div class="sb-nav-link-icon"><span class="fas fa-chart-area"></span></div>
+                            Data Cuti
+                        </a>
+                        <a class="nav-link" href="<?= base_url('absensiku'); ?>">
+                            <div class="sb-nav-link-icon"><span class="fas fa-chart-area"></span></div>
+                            Data Gaji
+                        </a>
                         <div class="sb-sidenav-menu-heading">Admin</div>
                         <a class="nav-link" href="<?= base_url('datapegawai'); ?>">
                             <div class="sb-nav-link-icon"><span class="fas fa-users"></span></div>
                             Data Pegawai
-                        </a><a class="nav-link" href="<?= base_url('absensi'); ?>">
+                        </a>
+                        <a class="nav-link" href="<?= base_url('absensi'); ?>">
                             <div class="sb-nav-link-icon"><span class="fas fa-user-check"></span></div>
                             Absensi Pegawai
                         </a>
-                        </a><a class="nav-link" href="<?= base_url('settingapp'); ?>">
+                        <a class="nav-link" href="<?= base_url('absensi'); ?>">
+                            <div class="sb-nav-link-icon"><span class="fas fa-user-check"></span></div>
+                            Cuti Pegawai
+                        </a>
+                        <a class="nav-link" href="<?= base_url('absensi'); ?>">
+                            <div class="sb-nav-link-icon"><span class="fas fa-user-check"></span></div>
+                            Gaji Pegawai
+                        </a>
+                        </a>
+                        <a class="nav-link" href="<?= base_url('settingapp'); ?>">
                             <div class="sb-nav-link-icon"><span class="fas fa-cog"></span></div>
                             Settings Aplikasi
                         </a>
@@ -42,7 +60,8 @@
                             Data Kehadiran
                         </a>
                         <div class="sb-sidenav-menu-heading">Moderator</div>
-                        </a><a class="nav-link" href="<?= base_url('absensi'); ?>">
+                        </a>
+                        <a class="nav-link" href="<?= base_url('absensi'); ?>">
                             <div class="sb-nav-link-icon"><span class="fas fa-user-check"></span></div>
                             Absensi Pegawai
                         </a>
@@ -60,6 +79,14 @@
                         <a class="nav-link" href="<?= base_url('absensiku'); ?>">
                             <div class="sb-nav-link-icon"><span class="fas fa-chart-area"></span></div>
                             Data Kehadiran
+                        </a>
+                        <a class="nav-link" href="<?= base_url('absensiku'); ?>">
+                            <div class="sb-nav-link-icon"><span class="fas fa-chart-area"></span></div>
+                            Data Cuti
+                        </a>
+                        <a class="nav-link" href="<?= base_url('absensiku'); ?>">
+                            <div class="sb-nav-link-icon"><span class="fas fa-chart-area"></span></div>
+                            Data Gaji
                         </a>
                     </div>
                 </div>
