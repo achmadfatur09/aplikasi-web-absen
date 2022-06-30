@@ -4,6 +4,7 @@
         <div class="card-header">
             <div class="float-right d-inline">
                 <div class="btn btn-primary" id="refresh-tabel-absensi"><span class="fas fa-sync-alt mr-1"></span>Refresh Tabel</div>
+                <button class="btn btn-success" data-toggle="modal" data-target="#addpegawaimodal" id="pgwadduser"><span class="fas fa-plus mr-1"></span>Ajukan Cuti</button>
             </div>
         </div>
         <div class="card-body">
