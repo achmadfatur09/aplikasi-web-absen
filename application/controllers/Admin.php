@@ -78,4 +78,34 @@ class Admin extends CI_Controller
         $this->load->view('admin/absenpegawai', $data);
         $this->load->view('layout/footer', $data);
     }
+
+    public function cuti()
+    {
+        is_moderator();
+        $data = [
+            'title' => 'Cuti Pegawai',
+            'user' => $this->get_datasess,
+            'dataapp' => $this->get_datasetupapp
+        ];
+        $this->load->view('layout/header', $data);
+        $this->load->view('layout/navbar', $data);
+        $this->load->view('layout/sidebar', $data);
+        $this->load->view('admin/cutipegawai', $data);
+        $this->load->view('layout/footer', $data);
+    }
+
+    public function gaji()
+    {
+        is_moderator();
+        $data = [
+            'title' => 'Gaji Pegawai',
+            'user' => $this->get_datasess,
+            'dataapp' => $this->get_datasetupapp
+        ];
+        $this->load->view('layout/header', $data);
+        $this->load->view('layout/navbar', $data);
+        $this->load->view('layout/sidebar', $data);
+        $this->load->view('admin/gajipegawai', $data);
+        $this->load->view('layout/footer', $data);
+    }
 }

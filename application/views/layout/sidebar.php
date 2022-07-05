@@ -14,11 +14,11 @@
                             <div class="sb-nav-link-icon"><span class="fas fa-chart-area"></span></div>
                             Data Kehadiran
                         </a>
-                        <a class="nav-link" href="<?= base_url('absensiku'); ?>">
+                        <a class="nav-link" href="<?= base_url('cutiku'); ?>">
                             <div class="sb-nav-link-icon"><span class="fas fa-chart-area"></span></div>
                             Data Cuti
                         </a>
-                        <a class="nav-link" href="<?= base_url('absensiku'); ?>">
+                        <a class="nav-link" href="<?= base_url('gajiku'); ?>">
                             <div class="sb-nav-link-icon"><span class="fas fa-chart-area"></span></div>
                             Data Gaji
                         </a>
@@ -31,11 +31,11 @@
                             <div class="sb-nav-link-icon"><span class="fas fa-user-check"></span></div>
                             Absensi Pegawai
                         </a>
-                        <a class="nav-link" href="<?= base_url('absensi'); ?>">
+                        <a class="nav-link" href="<?= base_url('cuti'); ?>">
                             <div class="sb-nav-link-icon"><span class="fas fa-user-check"></span></div>
                             Cuti Pegawai
                         </a>
-                        <a class="nav-link" href="<?= base_url('absensi'); ?>">
+                        <a class="nav-link" href="<?= base_url('gaji'); ?>">
                             <div class="sb-nav-link-icon"><span class="fas fa-user-check"></span></div>
                             Gaji Pegawai
                         </a>
@@ -80,11 +80,11 @@
                             <div class="sb-nav-link-icon"><span class="fas fa-chart-area"></span></div>
                             Data Kehadiran
                         </a>
-                        <a class="nav-link" href="<?= base_url('absensiku'); ?>">
+                        <a class="nav-link" href="<?= base_url('cutiku'); ?>">
                             <div class="sb-nav-link-icon"><span class="fas fa-chart-area"></span></div>
                             Data Cuti
                         </a>
-                        <a class="nav-link" href="<?= base_url('absensiku'); ?>">
+                        <a class="nav-link" href="<?= base_url('gajiku'); ?>">
                             <div class="sb-nav-link-icon"><span class="fas fa-chart-area"></span></div>
                             Data Gaji
                         </a>

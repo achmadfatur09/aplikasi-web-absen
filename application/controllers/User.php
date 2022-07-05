@@ -56,4 +56,32 @@ class User extends CI_Controller
         $this->load->view('user/absensi', $data);
         $this->load->view('layout/footer', $data);
     }
+
+    public function cutiku()
+    {
+        $data = [
+            'title' => 'Data Kehadiran',
+            'user' => $this->get_datasess,
+            'dataapp' => $this->get_datasetupapp
+        ];
+        $this->load->view('layout/header', $data);
+        $this->load->view('layout/navbar', $data);
+        $this->load->view('layout/sidebar', $data);
+        $this->load->view('user/absensi', $data);
+        $this->load->view('layout/footer', $data);
+    }
+
+    public function gaji()
+    {
+        $data = [
+            'title' => 'Data Kehadiran',
+            'user' => $this->get_datasess,
+            'dataapp' => $this->get_datasetupapp
+        ];
+        $this->load->view('layout/header', $data);
+        $this->load->view('layout/navbar', $data);
+        $this->load->view('layout/sidebar', $data);
+        $this->load->view('user/absensi', $data);
+        $this->load->view('layout/footer', $data);
+    }
 }

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 30, 2022 at 06:21 PM
+-- Generation Time: Jul 05, 2022 at 05:49 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 7.4.27
 
@@ -40,13 +40,74 @@ CREATE TABLE `db_absensi` (
   `maps_absen` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+-- --------------------------------------------------------
+
 --
--- Dumping data for table `db_absensi`
+-- Table structure for table `db_cuti`
 --
 
-INSERT INTO `db_absensi` (`id_absen`, `kode_absen`, `nama_pegawai`, `kode_pegawai`, `tgl_absen`, `jam_masuk`, `jam_pulang`, `status_pegawai`, `keterangan_absen`, `maps_absen`) VALUES
-(1, 'absen_20220632488', 'Achmad', '471293350258616', 'Selasa, 28 Juni 2022', '23:31:35', '23:52:34', 2, 'Bekerja Di Kantor', 'No Location'),
-(2, 'absen_20220643863', 'Faturohman', '293571010111', 'Selasa, 28 Juni 2022', '23:31:53', '', 2, 'Bekerja Di Kantor', 'No Location');
+CREATE TABLE `db_cuti` (
+  `id_cuti` int(11) NOT NULL,
+  `username` varchar(125) NOT NULL,
+  `nama_lengkap` varchar(100) NOT NULL,
+  `tgl_mulai` date NOT NULL,
+  `tgl_akhir` date NOT NULL,
+  `keperluan` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `db_cuti`
+--
+
+INSERT INTO `db_cuti` (`id_cuti`, `username`, `nama_lengkap`, `tgl_mulai`, `tgl_akhir`, `keperluan`) VALUES
+(1, 'fatur', 'Achmad Faturohman', '2022-07-10', '2022-07-15', 'Pulang Kampung');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `db_gaji`
+--
+
+CREATE TABLE `db_gaji` (
+  `id_gaji` int(11) NOT NULL,
+  `username` varchar(125) NOT NULL,
+  `nama_lengkap` varchar(125) NOT NULL,
+  `id_jabatan` int(11) NOT NULL,
+  `nm_jabatan` varchar(100) NOT NULL,
+  `gaji` varchar(100) NOT NULL,
+  `tunjangan` varchar(100) NOT NULL,
+  `potongan` varchar(100) NOT NULL,
+  `gaji_bersih` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `db_gaji`
+--
+
+INSERT INTO `db_gaji` (`id_gaji`, `username`, `nama_lengkap`, `id_jabatan`, `nm_jabatan`, `gaji`, `tunjangan`, `potongan`, `gaji_bersih`) VALUES
+(1, 'fatur', 'Achmad Faturohhman', 1, 'Manager', '10.000.000', '4.550.500', '3.000.000', '11.550.500');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `db_jabatan`
+--
+
+CREATE TABLE `db_jabatan` (
+  `id_jabatan` int(11) NOT NULL,
+  `nm_jabatan` varchar(100) NOT NULL,
+  `gaji` varchar(100) NOT NULL,
+  `tunjangan` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `db_jabatan`
+--
+
+INSERT INTO `db_jabatan` (`id_jabatan`, `nm_jabatan`, `gaji`, `tunjangan`) VALUES
+(1, 'Manager', '10.000.000', '4.550.500'),
+(2, 'Supervisor', '8.300.000', '3.500.000'),
+(3, 'Staff', '6.000.000', '3.000.000');
 
 -- --------------------------------------------------------
 
@@ -127,8 +188,8 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id_pegawai`, `nama_lengkap`, `username`, `password`, `role_id`, `umur`, `image`, `qr_code_image`, `kode_pegawai`, `instansi`, `jabatan`, `npwp`, `tgl_lahir`, `tempat_lahir`, `jenis_kelamin`, `bagian_shift`, `is_active`, `qr_code_use`, `last_login`, `date_created`) VALUES
-(1, 'Faturohman', 'admin', '$2y$10$9UfWWjQ/U8jZeU1tt/EUZ.LIF2N/3Ipq/e8wzJLfXxWUqewaCseK.', 1, 24, '2d58559d2d6ba4bd53dda06125778fb3.png', 'no-qrcode.png', '293571010111', 'PT Kinarya Alihdaya Mandiri', 'Admin', '123456789', '1997-07-09', 'Ciamis', 'Laki - Laki', 1, 1, 0, 1656433121, 1584698797),
-(43, 'Achmad', 'fatur', '$2y$10$5OBgu.hz6TBTlJKxNsPBHOU4scJAolag/z8dUEGXF05HgDRJN6vWW', 3, 24, '3dc5279d30f24920999fa7714da3dda2.png', 'qr_code_471293350258616.png', '471293350258616', 'PT Kinarya Alihdaya Mandiri', 'SPV', '123456789', '2022-06-04', 'Ciamis', 'Laki - Laki', 1, 1, 1, 0, 1656433239);
+(1, 'Admin PT KAM', 'admin', '$2y$10$9UfWWjQ/U8jZeU1tt/EUZ.LIF2N/3Ipq/e8wzJLfXxWUqewaCseK.', 1, 24, '2d58559d2d6ba4bd53dda06125778fb3.png', 'no-qrcode.png', '293571010111', 'PT Kinarya Alihdaya Mandiri', 'Admin', '123456789', '1997-07-09', 'Ciamis', 'Laki - Laki', 1, 1, 0, 1657036100, 1584698797),
+(43, 'Achmad Faturohman', 'fatur', '$2y$10$HJ74n98t2/VHy8MtfnhKbuBEn8cFoZ7hLD5svxD8SDEDhq2U3xAKK', 3, 24, '3dc5279d30f24920999fa7714da3dda2.png', 'qr_code_471293350258616.png', '471293350258616', 'PT Kinarya Alihdaya Mandiri', 'Manager', '123456789', '2022-06-04', 'Ciamis', 'Laki - Laki', 1, 1, 1, 1657034743, 1656433239);
 
 --
 -- Indexes for dumped tables
@@ -139,6 +200,24 @@ INSERT INTO `user` (`id_pegawai`, `nama_lengkap`, `username`, `password`, `role_
 --
 ALTER TABLE `db_absensi`
   ADD PRIMARY KEY (`id_absen`);
+
+--
+-- Indexes for table `db_cuti`
+--
+ALTER TABLE `db_cuti`
+  ADD PRIMARY KEY (`id_cuti`);
+
+--
+-- Indexes for table `db_gaji`
+--
+ALTER TABLE `db_gaji`
+  ADD PRIMARY KEY (`id_gaji`);
+
+--
+-- Indexes for table `db_jabatan`
+--
+ALTER TABLE `db_jabatan`
+  ADD PRIMARY KEY (`id_jabatan`);
 
 --
 -- Indexes for table `db_rememberme`
@@ -160,7 +239,25 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `db_absensi`
 --
 ALTER TABLE `db_absensi`
-  MODIFY `id_absen` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_absen` bigint(20) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `db_cuti`
+--
+ALTER TABLE `db_cuti`
+  MODIFY `id_cuti` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `db_gaji`
+--
+ALTER TABLE `db_gaji`
+  MODIFY `id_gaji` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `db_jabatan`
+--
+ALTER TABLE `db_jabatan`
+  MODIFY `id_jabatan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `db_rememberme`
