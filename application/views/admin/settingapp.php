@@ -102,7 +102,7 @@
                         </div>
                         <div class="form-group row justify-content-end">
                             <div class="col-sm-10">
-                                <button type="submit" class="btn btn-primary" id="settingapp-btn"><span class="fas fa-pen mr-1"></span>Edit</button>
+                                <button type="submit" class="btn btn-primary" id="settingapp-btn"><span class="fas fa-pen mr-1"></span>Save</button>
                             </div>
                         </div>
                         </form>

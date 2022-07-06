@@ -15,11 +15,11 @@
                             Data Kehadiran
                         </a>
                         <a class="nav-link" href="<?= base_url('cutiku'); ?>">
-                            <div class="sb-nav-link-icon"><span class="fas fa-chart-area"></span></div>
+                            <div class="sb-nav-link-icon"><span class="fas fa-user-check"></span></div>
                             Data Cuti
                         </a>
                         <a class="nav-link" href="<?= base_url('gajiku'); ?>">
-                            <div class="sb-nav-link-icon"><span class="fas fa-chart-area"></span></div>
+                            <div class="sb-nav-link-icon"><span class="fas fa-qrcode"></span></div>
                             Data Gaji
                         </a>
                         <div class="sb-sidenav-menu-heading">Admin</div>
@@ -28,7 +28,7 @@
                             Data Pegawai
                         </a>
                         <a class="nav-link" href="<?= base_url('absensi'); ?>">
-                            <div class="sb-nav-link-icon"><span class="fas fa-user-check"></span></div>
+                            <div class="sb-nav-link-icon"><span class="fas fa-clock"></span></div>
                             Absensi Pegawai
                         </a>
                         <a class="nav-link" href="<?= base_url('cuti'); ?>">
@@ -36,7 +36,7 @@
                             Cuti Pegawai
                         </a>
                         <a class="nav-link" href="<?= base_url('gaji'); ?>">
-                            <div class="sb-nav-link-icon"><span class="fas fa-user-check"></span></div>
+                            <div class="sb-nav-link-icon"><span class="fas fa-qrcode"></span></div>
                             Gaji Pegawai
                         </a>
                         </a>
@@ -81,11 +81,11 @@
                             Data Kehadiran
                         </a>
                         <a class="nav-link" href="<?= base_url('cutiku'); ?>">
-                            <div class="sb-nav-link-icon"><span class="fas fa-chart-area"></span></div>
+                            <div class="sb-nav-link-icon"><span class="fas fa-user-check"></span></div>
                             Data Cuti
                         </a>
                         <a class="nav-link" href="<?= base_url('gajiku'); ?>">
-                            <div class="sb-nav-link-icon"><span class="fas fa-chart-area"></span></div>
+                            <div class="sb-nav-link-icon"><span class="fas fa-qrcode"></span></div>
                             Data Gaji
                         </a>
                     </div>
