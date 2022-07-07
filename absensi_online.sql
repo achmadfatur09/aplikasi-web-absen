@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 05, 2022 at 05:49 PM
+-- Generation Time: Jul 07, 2022 at 04:24 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 7.4.27
 
@@ -152,7 +152,7 @@ CREATE TABLE `db_setting` (
 --
 
 INSERT INTO `db_setting` (`status_setting`, `nama_instansi`, `jumbotron_lead_set`, `nama_app_absensi`, `logo_instansi`, `timezone`, `absen_mulai`, `absen_mulai_to`, `absen_pulang`, `maps_use`) VALUES
-(1, 'PT Kinarya Alihdaya Mandiri', 'Silahkan Absen Tepat Waktu Dan Pulang Sesuai Jam Kerja', 'Absensi PT KAM', '6e7378683008828545c00dce1863b1f3.png', 'Asia/Jakarta', '23:30:00', '23:30:00', '17:00:00', 0);
+(1, 'PT Kinarya Alihdaya Mandiri', 'Semoga Hari Ini Menyenangkan', 'Absensi PT KAM', '6e7378683008828545c00dce1863b1f3.png', 'Asia/Jakarta', '07:30:00', '08:00:00', '17:00:00', 0);
 
 -- --------------------------------------------------------
 
@@ -188,8 +188,8 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id_pegawai`, `nama_lengkap`, `username`, `password`, `role_id`, `umur`, `image`, `qr_code_image`, `kode_pegawai`, `instansi`, `jabatan`, `npwp`, `tgl_lahir`, `tempat_lahir`, `jenis_kelamin`, `bagian_shift`, `is_active`, `qr_code_use`, `last_login`, `date_created`) VALUES
-(1, 'Admin PT KAM', 'admin', '$2y$10$9UfWWjQ/U8jZeU1tt/EUZ.LIF2N/3Ipq/e8wzJLfXxWUqewaCseK.', 1, 24, '2d58559d2d6ba4bd53dda06125778fb3.png', 'no-qrcode.png', '293571010111', 'PT Kinarya Alihdaya Mandiri', 'Admin', '123456789', '1997-07-09', 'Ciamis', 'Laki - Laki', 1, 1, 0, 1657036100, 1584698797),
-(43, 'Achmad Faturohman', 'fatur', '$2y$10$HJ74n98t2/VHy8MtfnhKbuBEn8cFoZ7hLD5svxD8SDEDhq2U3xAKK', 3, 24, '3dc5279d30f24920999fa7714da3dda2.png', 'qr_code_471293350258616.png', '471293350258616', 'PT Kinarya Alihdaya Mandiri', 'Manager', '123456789', '2022-06-04', 'Ciamis', 'Laki - Laki', 1, 1, 1, 1657034743, 1656433239);
+(1, 'Admin PT KAM', 'admin', '$2y$10$9UfWWjQ/U8jZeU1tt/EUZ.LIF2N/3Ipq/e8wzJLfXxWUqewaCseK.', 1, 24, '2d58559d2d6ba4bd53dda06125778fb3.png', 'no-qrcode.png', '293571010111', 'PT Kinarya Alihdaya Mandiri', 'Admin', '123456789', '1997-07-09', 'Ciamis', 'Laki - Laki', 1, 1, 0, 1657096661, 1584698797),
+(43, 'Achmad Faturohman', 'fatur', '$2y$10$HJ74n98t2/VHy8MtfnhKbuBEn8cFoZ7hLD5svxD8SDEDhq2U3xAKK', 3, 24, '3dc5279d30f24920999fa7714da3dda2.png', 'qr_code_471293350258616.png', '471293350258616', 'PT Kinarya Alihdaya Mandiri', 'Manager', '123456789', '2022-06-04', 'Ciamis', 'Laki - Laki', 1, 1, 1, 1657097021, 1656433239);
 
 --
 -- Indexes for dumped tables
